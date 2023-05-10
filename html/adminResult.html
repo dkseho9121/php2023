@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 블로그 만들기</title>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="../html/assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../html/assets/css/style.css">
+    <link href="https://webfontworld.github.io/NanumSquare/NanumSquare.css" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script defer src="./assets/js/common.js"></script>
+</head>
+<body class="gray">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <header id="header">
+        <div class="header__inner container">
+            <div class="left">
+                <a href="../index.php" class="star"><span class="blind">메인으로</span></a>
+            </div>
+            <h1 class="logo">
+                <a href="../index.html">Developer Blog</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+    <main id="main" class="container">
+        <div class="intro__inner center bmStyle">
+            <picture class="intro__images">
+                <source srcset="assets/img/joinEnd01.png, assets/img/joinEnd01@2x.png, assets/img/joinEnd01@3x.png">
+                <img src="assets/img/joinEnd01@2x.png" alt="회원가입 이미지">
+            </picture>
+            <p class="intro__text">
+                회원가입이 완료 되었습니다.
+            </p>
+            <div class="join__inner">
+                <div class="index">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li class="active">3</li>
+                    </ul>
+                </div>
+            </div>
+        <!-- intro inner -->
+        <button class="bubbly-button"><a href="main.html">완료</a></button>
+    </main>
+    <!-- //main -->
+    <footer id="footer mb100">
+        <div class="footer__inner btStyle mb100 container">
+            <div>Copyright @ 2023 Hwanginchan</div>
+            <div>blog by inchan</div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
+
+<script>
+    var animateButton = function(e) {
+
+e.preventDefault;
+//reset animation
+e.target.classList.remove('animate');
+
+e.target.classList.add('animate');
+setTimeout(function(){
+  e.target.classList.remove('animate');
+},700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+bubblyButtons[i].addEventListener('click', animateButton, false);
+}
+</script>

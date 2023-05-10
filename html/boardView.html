@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="../html/assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../html/assets/css/style.css">
+    <link href="https://webfontworld.github.io/NanumSquare/NanumSquare.css" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script defer src="./assets/js/common.js"></script>
+</head>
+<body class="gray">
+    <div id="skip">기<
+        <a href="#header">헤더 영역 바로가/a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <header id="header">
+        <div class="header__inner container">
+            <div class="left">
+                <a href="#" class="star"><span class="blind">메인으로</span></a>
+            </div>
+            <h1 class="logo">
+                <a href="../index.html">Developer Blog</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+    <main id="main" class="container">
+        <div class="intro__inner center">
+            <picture class="intro__images small">
+                <source srcset="assets/img/join01.png, assets/img/join01@2x.png, assets/img/join01@3x.png">
+                <img src="assets/img/join01.png" alt="회원가입 이미지">
+            </picture>
+            <h2>게시물 보기</h2>
+            <p class="intro__text">
+                웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 게시판입니다.<br>
+                관련된 문의사항은 여기서 확인하세요!
+            </p>
+        </div>
+        <!-- intro inner -->
+        
+        <div class="board__inner">
+            <div class="board__view">
+                <table>
+                    <colgroup>
+                    <col style="width: 20%">
+                    <col style="width: 80%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>제목</th>
+                        <td>게시판 제목입니다.</td>
+                    </tr>
+                    <tr>
+                        <th>등록자</th>
+                        <td>황인찬</td>
+                    </tr>
+                    <tr>
+                        <th>등록일</th>
+                        <td>2023-03-03</td>
+                    </tr>
+                    <tr>
+                        <th>조회수</th>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>기초 지식 습득: 프론트엔드 개발에 필요한 기초적인 지식과 기술들을 습득해야 합니다. HTML, CSS, JavaScript 등의 웹 기술에 대한 이해와 응용 능력이 필요합니다. 또한 프로그래밍 언어와 개발 환경, 프로젝트 관리 도구에 대한 지식도 필요합니다.
+                            포트폴리오 작성: 습득한 지식과 기술을 바탕으로 프로젝트를 진행하고, 그 결과물을 포트폴리오로 정리합니다. 포트폴리오는 개발 역량을 증명하는 가장 중요한 자료이므로, 가능한 다양한 프로젝트를 경험해보는 것이 좋습니다.
+                            관련 채용 정보 수집: 취업을 위해서는 관련 채용 정보를 수시로 체크해야 합니다. 관련 웹사이트나 취업 커뮤니티를 활용하여 채용 정보를 수집하고, 이를 기반으로 자신이 지원할 수 있는 기업들을 찾아보는 것이 좋습니다.
+                            이력서 및 자기소개서 작성: 적합한 기업을 찾았다면, 이력서와 자기소개서를 작성합니다. 자신의 경력과 역량을 강조하고, 기업이 요구하는 역량과 일치시키는 것이 중요합니다.
+                            면접 준비: 이력서와 자기소개서가 통과되면 면접이 예정됩니다. 면접에 대비하여 자신의 역량과 경력, 그리고 관련 기술에 대한 이해를 다시 한번 확인하고, 자신의 강점을 잘 어필할 수 있는 방법을 찾아보는 것이 좋습니다.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="board__btn mb100">
+                <a href="#" class="btnStyle3">수정하기</a>
+                <a href="#" class="btnStyle3">삭제하기</a>
+                <a href="board.html" class="btnStyle3">목록보기</a>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+    <footer id="footer mb100">
+        <div class="footer__inner btStyle mb100 container">
+            <div>Copyright @ 2023 Hwanginchan</div>
+            <div>blog by inchan</div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

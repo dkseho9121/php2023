@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="swipe.css">
+    <title>slider</title>
+</head>
+<body>
+    <div id="slider">
+        <section id="sliderType" class="nexon">
+            <div class="slider__inner">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider img1">
+                                <div class="slider__info container">
+                                    <h1 class="title">사이트에 영양을담다<br>나의 삶을 더 영양있게</h1>
+                                    <p class="desc">영양많닭</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider img1">
+                                <div class="slider__info container">
+                                    <h1 class="title">사이트에 영양을담다<br>나의 삶을 더 영양있게</h1>
+                                    <p class="desc">영양많닭</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider img1">
+                                <div class="slider__info container">
+                                    <h1 class="title">사이트에 영양을담다<br>나의 삶을 더 영양있게</h1>
+                                    <p class="desc">영양많닭</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+document.querySelector(".swiper-button-play").style.display = "none";
+
+document.querySelector(".swiper-button-play").addEventListener("click", () => {
+    swiper.autoplay.start();
+    document.querySelector(".swiper-button-play").style.display = "none";
+    document.querySelector(".swiper-button-stop").style.display = "block";
+});
+document.querySelector(".swiper-button-stop").addEventListener("click", () => {
+    swiper.autoplay.stop();
+    document.querySelector(".swiper-button-play").style.display = "block";
+    document.querySelector(".swiper-button-stop").style.display = "none";
+});
+</script>
